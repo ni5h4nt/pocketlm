@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="240" viewBox="0 0 920 240" role="img" aria-label="PocketLM banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e1b4b"/>
+      <stop offset="0.55" stop-color="#4c1d95"/>
+      <stop offset="1" stop-color="#6d28d9"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="920" height="240" rx="18" fill="url(#bg)"/>
+  <!-- faint attention-grid motif -->
+  <g opacity="0.10" fill="#ffffff">
+    <rect x="660" y="40" width="26" height="26" rx="4"/>
+    <rect x="692" y="40" width="26" height="26" rx="4"/>
+    <rect x="724" y="40" width="26" height="26" rx="4"/>
+    <rect x="660" y="72" width="26" height="26" rx="4"/>
+    <rect x="692" y="72" width="26" height="26" rx="4"/>
+    <rect x="724" y="72" width="26" height="26" rx="4"/>
+    <rect x="660" y="104" width="26" height="26" rx="4"/>
+    <rect x="692" y="104" width="26" height="26" rx="4"/>
+    <rect x="724" y="104" width="26" height="26" rx="4"/>
+  </g>
+  <g opacity="0.22" fill="none" stroke="#22d3ee" stroke-width="2">
+    <path d="M620 170 C 690 120, 770 220, 850 150"/>
+    <path d="M620 195 C 700 150, 780 235, 860 180"/>
+  </g>
+  <text x="56" y="112" font-family="ui-sans-serif,Segoe UI,Helvetica,Arial,sans-serif" font-size="68" font-weight="800" fill="#ffffff" letter-spacing="-1">PocketLM</text>
+  <rect x="58" y="130" width="120" height="6" rx="3" fill="url(#accent)"/>
+  <text x="58" y="170" font-family="ui-sans-serif,Segoe UI,Helvetica,Arial,sans-serif" font-size="22" fill="#e9d5ff">Build a decoder-only language model from scratch.</text>
+  <text x="58" y="202" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="15" fill="#c4b5fd">char tokenizer &#8594; tiny GPT &#8594; train &#8594; modernize &#8594; adapt &#8594; serve</text>
+</svg>

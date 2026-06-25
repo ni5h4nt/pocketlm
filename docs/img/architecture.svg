@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="660" viewBox="0 0 520 660" role="img" aria-label="PocketLM architecture">
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#a78bfa"/>
+    </marker>
+  </defs>
+  <rect width="520" height="660" rx="16" fill="url(#card)"/>
+  <text x="260" y="40" text-anchor="middle" font-family="ui-sans-serif,Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" fill="#ffffff">PocketLM architecture</text>
+
+  <g font-family="ui-sans-serif,Segoe UI,Arial,sans-serif" font-size="15" fill="#e2e8f0" text-anchor="middle">
+    <!-- input -->
+    <rect x="170" y="60" width="180" height="40" rx="8" fill="#334155"/>
+    <text x="260" y="85">token ids</text>
+
+    <!-- embeddings -->
+    <rect x="150" y="124" width="220" height="44" rx="8" fill="#3730a3"/>
+    <text x="260" y="146">token + position</text>
+    <text x="260" y="162" font-size="12" fill="#c7d2fe">embedding  (RoPE optional)</text>
+
+    <!-- transformer block (repeated) -->
+    <rect x="70" y="196" width="380" height="288" rx="12" fill="none" stroke="#7c3aed" stroke-width="2" stroke-dasharray="5 4"/>
+    <text x="86" y="218" text-anchor="start" font-size="13" fill="#c4b5fd">N x transformer block</text>
+
+    <rect x="150" y="232" width="220" height="38" rx="8" fill="#1e293b" stroke="#475569"/>
+    <text x="260" y="256">Norm (LayerNorm / RMSNorm)</text>
+
+    <rect x="120" y="288" width="280" height="44" rx="8" fill="#0e7490"/>
+    <text x="260" y="310">Causal self-attention</text>
+    <text x="260" y="326" font-size="12" fill="#a5f3fc">multi-head / grouped-query</text>
+
+    <text x="410" y="316" text-anchor="start" font-size="12" fill="#94a3b8">+ residual</text>
+
+    <rect x="150" y="352" width="220" height="38" rx="8" fill="#1e293b" stroke="#475569"/>
+    <text x="260" y="376">Norm</text>
+
+    <rect x="120" y="408" width="280" height="44" rx="8" fill="#9333ea"/>
+    <text x="260" y="430">MLP (GELU / SwiGLU)</text>
+    <text x="260" y="446" font-size="12" fill="#e9d5ff">position-wise feed-forward</text>
+
+    <text x="410" y="436" text-anchor="start" font-size="12" fill="#94a3b8">+ residual</text>
+
+    <!-- final norm + head -->
+    <rect x="150" y="508" width="220" height="38" rx="8" fill="#1e293b" stroke="#475569"/>
+    <text x="260" y="532">final Norm</text>
+
+    <rect x="140" y="566" width="240" height="44" rx="8" fill="#15803d"/>
+    <text x="260" y="588">output head</text>
+    <text x="260" y="604" font-size="12" fill="#bbf7d0">tied to token embedding</text>
+
+    <rect x="190" y="626" width="140" height="30" rx="8" fill="#334155"/>
+    <text x="260" y="646">logits</text>
+  </g>
+
+  <g stroke="#a78bfa" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <path d="M260 100 L260 122"/>
+    <path d="M260 168 L260 230"/>
+    <path d="M260 270 L260 286"/>
+    <path d="M260 332 L260 350"/>
+    <path d="M260 390 L260 406"/>
+    <path d="M260 484 L260 506"/>
+    <path d="M260 546 L260 564"/>
+    <path d="M260 610 L260 624"/>
+  </g>
+</svg>
