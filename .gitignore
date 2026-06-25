@@ -16,3 +16,4 @@ docs/plans/
 
 # CASEF working documents (ephemeral; kept local, not published)
 docs/specs/
+.casef/
