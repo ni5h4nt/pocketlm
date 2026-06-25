@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+*.pt
+*.ckpt
+*.safetensors
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+# data/corpus.txt is intentionally committed (see data/README.md)
+
+# CASEF working documents (ephemeral; kept local, not published)
+docs/plans/
+
+# CASEF working documents (ephemeral; kept local, not published)
+docs/specs/
