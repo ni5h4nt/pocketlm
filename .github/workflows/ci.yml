@@ -11,3 +11,13 @@ jobs:
       - run: ruff check .
       - run: mypy pocketlm
       - run: pytest -q
+  notebooks:
+    runs-on: ubuntu-latest
+    env: { POCKETLM_CI: '1' }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install -e ".[dev]"
+      - run: nbqa ruff lessons/
+      - run: pytest --nbmake --nbmake-timeout=300 lessons/ -q

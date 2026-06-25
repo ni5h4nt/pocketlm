@@ -23,6 +23,11 @@ include = ["pocketlm*"]
 [tool.ruff]
 line-length = 100
 
+# Lesson notebooks teach by importing per cell, so module-level imports follow
+# explanatory code. Allow that (E402) in lessons only, not in the package.
+[tool.ruff.lint.per-file-ignores]
+"lessons/*" = ["E402"]
+
 # Target 3.12 for the type checker: numpy 2.x ships PEP 695 `type` statements in
 # its stubs (reached via torch's stubs) that mypy only parses under >=3.12. The
 # package stays 3.10-runtime-safe via `from __future__ import annotations`.
