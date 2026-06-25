@@ -1,10 +1,13 @@
 """PocketLM, a tiny decoder-only language model you build from scratch."""
 from .tokenizer import CharTokenizer
+from .bpe import BPETokenizer
 from .bigram import BigramLM
 from .model import PocketLM, PocketLMConfig
 from .train import train_tiny, pick_config
 from .generate import generate, next_token_probs
+from .data import make_batch, pad_batch
 
 __version__ = "0.1.0"
-__all__ = ["CharTokenizer", "BigramLM", "PocketLM", "PocketLMConfig", "train_tiny",
-           "pick_config", "generate", "next_token_probs"]
+__all__ = ["CharTokenizer", "BPETokenizer", "BigramLM", "PocketLM", "PocketLMConfig",
+           "train_tiny", "pick_config", "generate", "next_token_probs",
+           "make_batch", "pad_batch"]
