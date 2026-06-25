@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="560" viewBox="0 0 920 560" role="img" aria-label="PocketLM course roadmap">
+  <defs>
+    <linearGradient id="rbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+  </defs>
+  <rect width="920" height="560" rx="16" fill="url(#rbg)"/>
+  <text x="40" y="46" font-family="ui-sans-serif,Segoe UI,Arial,sans-serif" font-size="22" font-weight="800" fill="#ffffff">Course roadmap</text>
+  <text x="40" y="70" font-family="ui-sans-serif,Segoe UI,Arial,sans-serif" font-size="14" fill="#94a3b8">5 passes &#183; 10 units &#183; 56 lessons &#183; 2 credentials</text>
+
+  <g font-family="ui-sans-serif,Segoe UI,Arial,sans-serif">
+    <!-- Pass 1 -->
+    <text x="40" y="120" font-size="13" fill="#a5b4fc" font-weight="700">PASS 1 &#183; Experience It</text>
+    <rect x="40" y="130" width="180" height="48" rx="10" fill="#334155"/>
+    <text x="56" y="153" font-size="14" font-weight="700" fill="#fff">u0</text>
+    <text x="56" y="170" font-size="12" fill="#cbd5e1">Make It Speak</text>
+
+    <!-- Pass 2 -->
+    <text x="40" y="214" font-size="13" fill="#a5b4fc" font-weight="700">PASS 2 &#183; Build It</text>
+    <g>
+      <rect x="40" y="224" width="150" height="48" rx="10" fill="#3730a3"/>
+      <text x="56" y="247" font-size="14" font-weight="700" fill="#fff">u1</text>
+      <text x="56" y="264" font-size="12" fill="#c7d2fe">Tensors</text>
+      <rect x="202" y="224" width="150" height="48" rx="10" fill="#3730a3"/>
+      <text x="218" y="247" font-size="14" font-weight="700" fill="#fff">u2</text>
+      <text x="218" y="264" font-size="12" fill="#c7d2fe">Text to Vectors</text>
+      <rect x="364" y="224" width="150" height="48" rx="10" fill="#3730a3"/>
+      <text x="380" y="247" font-size="14" font-weight="700" fill="#fff">u3</text>
+      <text x="380" y="264" font-size="12" fill="#c7d2fe">Attention</text>
+      <rect x="526" y="224" width="150" height="48" rx="10" fill="#3730a3"/>
+      <text x="542" y="247" font-size="14" font-weight="700" fill="#fff">u4</text>
+      <text x="542" y="264" font-size="12" fill="#c7d2fe">Assemble</text>
+    </g>
+    <rect x="700" y="228" width="180" height="40" rx="20" fill="#064e3b" stroke="#10b981"/>
+    <text x="716" y="253" font-size="13" fill="#6ee7b7">&#127891; transformer-literacy</text>
+
+    <!-- Pass 3 -->
+    <text x="40" y="308" font-size="13" fill="#a5b4fc" font-weight="700">PASS 3 &#183; Train and Debug It</text>
+    <rect x="40" y="318" width="180" height="48" rx="10" fill="#1d4ed8"/>
+    <text x="56" y="341" font-size="14" font-weight="700" fill="#fff">u5</text>
+    <text x="56" y="358" font-size="12" fill="#bfdbfe">Train and Debug</text>
+
+    <!-- Pass 4 -->
+    <text x="40" y="402" font-size="13" fill="#a5b4fc" font-weight="700">PASS 4 &#183; Modernize and Adapt It</text>
+    <rect x="40" y="412" width="220" height="48" rx="10" fill="#7c3aed"/>
+    <text x="56" y="435" font-size="14" font-weight="700" fill="#fff">u6</text>
+    <text x="56" y="452" font-size="12" fill="#ddd6fe">Modernize (RoPE/RMSNorm/SwiGLU/GQA)</text>
+    <rect x="272" y="412" width="180" height="48" rx="10" fill="#7c3aed"/>
+    <text x="288" y="435" font-size="14" font-weight="700" fill="#fff">u7</text>
+    <text x="288" y="452" font-size="12" fill="#ddd6fe">Adapt (LoRA/DPO)</text>
+
+    <!-- Pass 5 -->
+    <text x="40" y="496" font-size="13" fill="#a5b4fc" font-weight="700">PASS 5 &#183; Optimize and Serve It</text>
+    <rect x="40" y="506" width="200" height="44" rx="10" fill="#9333ea"/>
+    <text x="56" y="528" font-size="14" font-weight="700" fill="#fff">u8</text>
+    <text x="56" y="544" font-size="12" fill="#f0abfc">Make Inference Fast</text>
+    <rect x="252" y="506" width="160" height="44" rx="10" fill="#9333ea"/>
+    <text x="268" y="528" font-size="14" font-weight="700" fill="#fff">u9</text>
+    <text x="268" y="544" font-size="12" fill="#f0abfc">Capstone</text>
+    <rect x="700" y="508" width="180" height="40" rx="20" fill="#064e3b" stroke="#10b981"/>
+    <text x="716" y="533" font-size="13" fill="#6ee7b7">&#127891; model-engineer</text>
+  </g>
+</svg>
