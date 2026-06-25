@@ -16,7 +16,7 @@
 
 You write every piece yourself, guided by 56 runnable notebooks. The code you build up lives in a tiny, tested, pip-installable Python package (`pocketlm`); the notebooks only *drive* it. Nothing is a black box, and nothing needs a GPU.
 
-You can learn it **standalone** (this repo) **or via [cybertect](https://github.com/ni5h4nt)** (the course platform that hosts these same notebooks). Either way the engine is identical.
+You can learn it **standalone** (this repo) **or via [cybertect](https://cybertect.ai)** (the course platform that hosts these same notebooks). Either way the engine is identical.
 
 ---
 
@@ -175,4 +175,4 @@ CI runs all of the above on every push. Notebook paths are validated against the
 
 ## License
 
-MIT, © 2026 ni5h4nt. The course structure's source of truth is the manifest in cybertect; this repo mirrors it by convention.
+MIT, © 2026 [Nishant Tyagi](https://github.com/ni5h4nt). The course structure's source of truth is the manifest in [cybertect](https://cybertect.ai); this repo mirrors it by convention.
