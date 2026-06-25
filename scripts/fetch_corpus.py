@@ -16,7 +16,8 @@ def build() -> str:
 
 if __name__ == "__main__":
     text = build()
-    with open("data/corpus.txt", "w", encoding="utf-8") as f:
+    # The corpus ships as package data so `pip install` carries it.
+    with open("pocketlm/corpus.txt", "w", encoding="utf-8") as f:
         f.write(text)
     print("bytes:", len(text.encode("utf-8")))
     print("sha256:", hashlib.sha256(text.encode("utf-8")).hexdigest())
