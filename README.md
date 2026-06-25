@@ -58,11 +58,11 @@ The course is 5 **passes**, 10 **units**, 56 **lessons**, and 2 **credentials**.
 
 | Pass | Theme | Units | Lessons | Credential at the end |
 |---|---|---|---|---|
-| **1** | Experience It | u0 | 5 | — |
-| **2** | Build It | u1–u4 | 22 | 🎓 **transformer-literacy** |
-| **3** | Train and Debug It | u5 | 7 | — |
-| **4** | Modernize and Adapt It | u6–u7 | 14 | — |
-| **5** | Optimize and Serve It | u8–u9 | 8 | 🎓 **model-engineer** |
+| **1** | Experience It | u0 | 5 | (none) |
+| **2** | Build It | u1-u4 | 22 | 🎓 **transformer-literacy** |
+| **3** | Train and Debug It | u5 | 7 | (none) |
+| **4** | Modernize and Adapt It | u6-u7 | 14 | (none) |
+| **5** | Optimize and Serve It | u8-u9 | 8 | 🎓 **model-engineer** |
 
 Lessons are cumulative: each one advances the single PocketLM artifact you carry from u0 to the capstone.
 
