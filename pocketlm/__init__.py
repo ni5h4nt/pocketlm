@@ -7,8 +7,12 @@ from .model import PocketLM, PocketLMConfig
 from .train import train_tiny, pick_config
 from .generate import generate, next_token_probs
 from .data import make_batch, pad_batch
+from .trainer import (init_weights, cosine_lr, split_data, estimate_loss,
+                      perplexity, save_checkpoint, load_checkpoint)
 
 __version__ = "0.1.0"
 __all__ = ["CharTokenizer", "BPETokenizer", "BigramLM", "scaled_dot_product_attention",
            "PocketLM", "PocketLMConfig", "train_tiny", "pick_config", "generate",
-           "next_token_probs", "make_batch", "pad_batch"]
+           "next_token_probs", "make_batch", "pad_batch", "init_weights", "cosine_lr",
+           "split_data", "estimate_loss", "perplexity", "save_checkpoint",
+           "load_checkpoint"]
