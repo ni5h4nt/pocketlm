@@ -1,11 +1,14 @@
 """Training entry point + device-aware config presets."""
 from __future__ import annotations
 from dataclasses import replace
+from typing import Any
 import torch
 from .model import PocketLM, PocketLMConfig
 from .tokenizer import CharTokenizer
 
-_PRESETS = {
+# values are heterogeneous (the config also has bool fields), so type as Any to
+# keep the **unpack into PocketLMConfig well-typed.
+_PRESETS: dict[str, dict[str, Any]] = {
     "gpu":   dict(n_layer=4, n_head=4, n_embd=128, block_size=128, steps=2000, batch_size=32),
     "cpu":   dict(n_layer=2, n_head=2, n_embd=64,  block_size=64,  steps=500,  batch_size=16),
     "micro": dict(n_layer=2, n_head=2, n_embd=64,  block_size=64,  steps=20,   batch_size=16),

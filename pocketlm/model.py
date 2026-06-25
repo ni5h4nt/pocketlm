@@ -15,6 +15,7 @@ class PocketLMConfig:
     n_embd: int = 128
     steps: int = 2000
     batch_size: int = 32
+    tie_weights: bool = True
 
 
 class CausalSelfAttention(nn.Module):
@@ -69,6 +70,10 @@ class PocketLM(nn.Module):
         self.blocks = nn.ModuleList([Block(cfg) for _ in range(cfg.n_layer)])
         self.ln_f = nn.LayerNorm(cfg.n_embd)
         self.head = nn.Linear(cfg.n_embd, cfg.vocab_size, bias=False)
+        if cfg.tie_weights:
+            # Share the embedding matrix with the output projection: same
+            # [vocab, n_embd] weight, fewer parameters, a common GPT trick.
+            self.head.weight = self.tok_emb.weight
 
     def forward(self, idx: torch.Tensor, targets: torch.Tensor | None = None):
         B, T = idx.shape
