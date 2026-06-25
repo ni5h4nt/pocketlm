@@ -17,6 +17,16 @@ def test_loss_when_targets_given():
     _, loss = m(idx, idx)
     assert loss.ndim == 0 and loss.item() > 0
 
+def test_weight_tying_default():
+    m = PocketLM(_tiny())
+    assert m.head.weight is m.tok_emb.weight   # tied by default (PocketLM v1)
+
+def test_weight_tying_can_be_disabled():
+    cfg = PocketLMConfig(vocab_size=11, block_size=8, n_layer=2, n_head=2, n_embd=16,
+                         tie_weights=False)
+    m = PocketLM(cfg)
+    assert m.head.weight is not m.tok_emb.weight
+
 def test_causality():
     # Changing the LAST token must not change earlier positions' logits.
     torch.manual_seed(0)
