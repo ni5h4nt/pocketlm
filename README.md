@@ -175,4 +175,4 @@ CI runs all of the above on every push. Notebook paths are validated against the
 
 ## License
 
-MIT, © 2026 ni5h4nt. The course structure's source of truth is the manifest in [cybertect](https://cybertect.ai); this repo mirrors it by convention.
+MIT, © 2026 [Nishant Tyagi](https://github.com/ni5h4nt). The course structure's source of truth is the manifest in [cybertect](https://cybertect.ai); this repo mirrors it by convention.
