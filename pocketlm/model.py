@@ -46,6 +46,12 @@ def _make_mlp(cfg: PocketLMConfig) -> nn.Module:
 
 
 class CausalSelfAttention(nn.Module):
+    # Declared so the type checker knows these registered buffers are Tensors
+    # (register_buffer is typed to return Tensor | Module across torch versions).
+    mask: torch.Tensor
+    rope_cos: torch.Tensor
+    rope_sin: torch.Tensor
+
     def __init__(self, cfg: PocketLMConfig) -> None:
         super().__init__()
         if cfg.n_embd % cfg.n_head != 0:

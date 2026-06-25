@@ -14,8 +14,8 @@ authors = [{ name = "Nishant Tyagi" }]
 dependencies = ["torch>=2.4", "numpy", "matplotlib"]
 
 [project.optional-dependencies]
-# dev tightens the floor to a determinism pin for CI; >=2.4 and ==2.4.* resolve to 2.4.*
-dev = ["torch==2.4.*", "pytest", "nbmake", "ruff", "mypy", "nbqa"]
+# dev allows torch 2.4 through the 2.12 line (kept below 2.13 as a tested ceiling).
+dev = ["torch>=2.4,<2.13", "pytest", "nbmake", "ruff", "mypy", "nbqa"]
 
 [tool.setuptools.packages.find]
 include = ["pocketlm*"]
