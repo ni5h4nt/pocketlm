@@ -9,7 +9,7 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
-# data/corpus.txt is intentionally committed (see data/README.md)
+# pocketlm/corpus.txt is intentionally committed package data (see data/README.md)
 
 # CASEF working documents (ephemeral; kept local, not published)
 docs/plans/

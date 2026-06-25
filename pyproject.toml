@@ -20,6 +20,9 @@ dev = ["torch==2.4.*", "pytest", "nbmake", "ruff", "mypy", "nbqa"]
 [tool.setuptools.packages.find]
 include = ["pocketlm*"]
 
+[tool.setuptools.package-data]
+pocketlm = ["corpus.txt"]
+
 [tool.ruff]
 line-length = 100
 
