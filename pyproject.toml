@@ -15,7 +15,7 @@ dependencies = ["torch>=2.4", "numpy", "matplotlib"]
 
 [project.optional-dependencies]
 # dev allows torch 2.4 through the 2.12 line (kept below 2.13 as a tested ceiling).
-dev = ["torch>=2.4,<2.13", "pytest", "nbmake", "ruff", "mypy", "nbqa"]
+dev = ["torch>=2.4,<2.15", "pytest", "nbmake", "ruff", "mypy", "nbqa"]
 
 [tool.setuptools.packages.find]
 include = ["pocketlm*"]
